@@ -1,0 +1,137 @@
+/* Design System */
+
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300;400;500;700 & family= Shrikhand & display=swap');
+@import 'header.css';
+@import 'footer.css';
+@import 'button.css';
+@import 'card.css';
+
+/**** Colors ****/
+
+$Background: #F6F6F6;
+$Location-Grey: #EAEAEA;
+$Primary: #9356DC;
+$Green: #99E2D0;
+$Green-Font: #008766;
+$Footer-White-Font: #FFFFFF;
+
+/**** Text configuration ****/
+
+$Location-font: 'Roboto', sans-serif;
+$Title-font: 'Roboto', sans-serif;
+$Hero-text-font: 'Roboto', sans-serif;
+$Card-restaurant-title-font: 'Roboto', sans-serif;
+$Card-restaurant-location-font: 'Roboto', sans-serif;
+$Link-footer-font: 'Roboto', sans-serif;
+$Contact-footer-font: 'Roboto', sans-serif;
+
+$Location-font-weight: 500;
+$Title-font-weight: 700;
+$Hero-text-font-weight: 300;
+$Card-restaurant-title-font-weight: 700;
+$Card-restaurant-location-font-weight: 300;
+$Link-footer-font-weight: 500;
+$Contact-footer-font-weight: 400;
+
+$Location-font-size: 1rem;
+$Title-font-size: 1.5rem;
+$Hero-text-font-size: 1.13rem;
+$Card-restaurant-title-font-size: 1.13rem;
+$Card-restaurant-location-font-size: 1.07rem;
+$Link-footer-font-size: 1rem;
+$contact-footer-font-size: 1rem;
+
+body,
+p{
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: $Title-font;
+    font-size: $Title-font-size;
+    font-weight: $Title-font-weight;
+    margin: 0;
+}
+
+.main-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.location {
+    background-color: $Location-Grey;
+    font-family: $Location-font;
+    font-size: $Location-font-size;
+    font-weight: $Location-font-weight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.07rem;
+    height: 3.13rem;
+}
+
+.hero {
+    background-color: $Background;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.44rem;
+    padding-bottom: 3.57rem;
+
+    h1{
+        width: 17.19rem;
+        height: 4.25rem;
+        text-align: center;   
+    }
+    p{
+        font-family: $Hero-text-font;
+        font-size: $Hero-text-font-size;
+        font-weight: $Hero-text-font-weight; 
+        height: 2.88rem;
+        text-align: center;
+        padding-bottom: 1.69rem;
+    }
+}
+
+.functioning {
+    padding: 3rem 1.25rem 4.25rem 1.25rem;
+    ol{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.57rem;
+        margin: 1.65rem 0 0 0;
+        padding-left: 0.5rem;
+        list-style-type: none;
+        counter-reset: li;       
+        li {
+            position: relative;
+
+        }
+        li::before {
+            content: counter(li);
+            counter-increment: li;
+            position: absolute;
+            margin-top: 1.69rem;
+            margin-left: -0.75rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 1.5rem;
+            background: $Primary;
+            color: white;
+        }
+    }
+}
+
+.Restaurants {
+    padding: 3.38rem 0.94rem 4.13rem 1.07rem;
+    background: $Background;
+}

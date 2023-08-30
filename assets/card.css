@@ -1,0 +1,40 @@
+.card__restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+  width: 21.25rem;
+  height: 15.69rem;
+  margin: 0;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.card__restaurant img {
+  width: 100%;
+  height: 14.44rem;
+  border-radius: 0.94rem 0.94rem 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: row;
+  border-radius: 0 0 0.94rem 0.94rem;
+  background: white;
+}
+
+.card__title {
+  margin: 1rem 0 0.32rem 0.82rem;
+  width: 16.69rem;
+}
+
+.card__subtitle {
+  height: 1.5rem;
+  margin: 0 0 0.75rem 0.82rem;
+}
+
+.like__icon {
+  font-size: 1.38rem;
+  margin-top: 1.44rem;
+  margin-left: 0.82rem;
+}
