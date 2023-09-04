@@ -1,0 +1,84 @@
+
+@import 'style.css';
+@import 'variables';
+@import 'header.css';
+@import 'footer.css';
+@import 'button.css';
+@import 'card.css';
+
+.title { 
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;  
+}
+
+.locabar {
+    align-items: center;
+    background-color: #EAEAEA;
+    display: flex; 
+    font-size: 1rem;
+    font-weight: 500;
+    gap: 1.07rem;
+    height: 3.13rem;
+    justify-content: center;   
+}
+
+.hero {
+    align-items: center;
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding-bottom: 3.57rem;
+    padding-top: 3.44rem;
+    text-align: center; 
+    &__txt {
+        font-size: 1.13rem;
+        font-weight: 300; 
+        padding-bottom: 1.69rem;
+    } 
+}
+
+.hero__title {
+    height: 4.25rem;
+    width: 17.19rem;
+}
+
+.functioning {
+    padding: 3rem 1.25rem 4.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        width: 20.13rem;
+        margin: 0;
+    }
+    &__icon {
+        color: #7E7E7E;
+        font-size: 1.25rem;
+    }
+}
+
+.functioning__container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.63rem;
+    row-gap: 1.57rem;
+}
+
+.restaurants {   
+    background: $background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.38rem 0.94rem 4.13rem 1.07rem;    
+    &__title {
+        padding-bottom: 1.22rem;
+        padding-left: 0.19rem;
+        width: 21.25rem;
+    }
+}
