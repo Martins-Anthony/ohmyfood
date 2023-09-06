@@ -28,25 +28,31 @@
     border-radius: 1.25rem;
 }
 
-.btn__container {
+.functioning ol {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 0.69rem;
-}
-
-.btn__puce {
-    background: $primary;
-    border-radius: 100%;
-    color: white;
-    margin-left: -0.75rem;
+    gap: 1.57rem;
+    margin: 1.65rem 0 0 0;
+    padding-left: 0.5rem;
+    list-style-type: none;
+    counter-reset: li;
+  }
+  .functioning ol li {
+    position: relative;
+  }
+  .functioning ol li::before {
+    content: counter(li);
+    counter-increment: li;
     position: absolute;
-    text-align: center;
-    height: 1.5rem;
+    margin-top: 1.69rem;
+    margin-left: -0.75rem;
     width: 1.5rem;
-    font-size: 0.89rem;
-    font-weight: 500;
-    p {
-       margin-top: 0.32rem;
-    }
-}
+    height: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5rem;
+    background: #9356DC;
+    color: white;
+  }
