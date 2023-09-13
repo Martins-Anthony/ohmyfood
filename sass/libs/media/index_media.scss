@@ -1,0 +1,28 @@
+/* Medium devices (tablets, less/equal than 425px) */
+@include tablette(425px) {
+   .hero {
+    .title {
+        width: 100%;    
+    }
+   }
+}
+
+/* Large devices (Computer 1024px) */
+@include computer(1024px) {
+    .hero {
+        .title {
+            font-size: 2.5rem;    
+        }
+    }
+
+    .functioning {
+        padding: 3.13rem auto;
+        
+        ol {
+            flex-direction: row;
+            column-gap: 2.28rem;
+            
+        }
+        
+    }
+}

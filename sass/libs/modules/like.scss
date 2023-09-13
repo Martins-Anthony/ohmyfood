@@ -1,0 +1,32 @@
+.heart-checkbox {
+    display: none;
+    }
+    
+    .heart-label {
+      box-sizing: border-box;
+      overflow: hidden;
+      display: flex;
+      font-size: 1.38rem;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      height: 1.38rem;
+      width: 1.38rem;
+    }
+    
+    .icon-like-solid {
+      background-image: linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      position: absolute;
+      transform: scale(0);
+      transition: transform 2000ms ease-in;
+      transform-origin: 50% 95%;
+    }
+    
+    .heart-checkbox:checked + .heart-label .icon-like-solid{
+      transform: scale(1);
+    }
+
+   

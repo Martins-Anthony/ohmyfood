@@ -17,8 +17,7 @@ footer {
     }
 }
 
-.footer__logo::after {
-    content: 'ohmyfood';
+.footer__logo {
     font-family: 'Shrikhand';
     font-size: 1.13rem;
     font-weight: 400;

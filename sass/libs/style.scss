@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
-@import 'variables';
+@import 'variables.scss';
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -21,7 +21,8 @@ a {
 }
 
 .main-container {
-    max-width: 1440px;
-    width: 100%;  
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100%; 
 }
 
