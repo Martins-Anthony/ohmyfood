@@ -1,0 +1,19 @@
+/* Medium devices (tablets, less/equal than 425px) */
+@include tablette{
+    .restaurant-menu__title {
+        align-self: center;
+        gap: 24px;
+    }
+}
+
+/* Large devices (Computer 1024px) */
+@include computer {
+    .img__restaurant {
+        height: 23.92rem;
+    }
+
+    .restaurant-menu{
+        padding-top: 3.19rem;
+        margin-top: -2.5rem;
+    }
+}

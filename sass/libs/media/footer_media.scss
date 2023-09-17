@@ -1,0 +1,35 @@
+@include computer {
+   footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding-top: 1.88rem;
+    padding-bottom: 1.88rem;
+    column-gap: 1rem;
+    margin: 0;
+    height: 3.4rem;
+
+    ul {
+        flex-direction: row;
+        row-gap: 0;
+
+        li {
+            margin-left: 0.44rem;
+        }
+    }
+   }
+
+   .partner {
+    width: 11.88rem;
+    }
+
+    .contact {
+        width: 8.13rem;
+    }
+
+    .footer__logo {
+        width: 8.6rem;
+        display: flex;
+    }
+}
+        

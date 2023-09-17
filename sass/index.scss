@@ -1,17 +1,10 @@
-@import 'libs/modules/loader.scss';
-@import 'libs/variables.scss';
-@import 'libs/style.scss';
-@import 'libs/header.scss';
-@import 'libs/footer.scss';
-@import 'libs/modules/button.scss';
-@import 'libs/modules/card.scss';
-@import 'libs/modules/like.scss';
-@import 'libs/mixin.scss';
-
-body {
-    display: flex;
-    position: relative;
-}
+@import '../sass/libs/modules/style.scss';
+@import '../sass/libs/modules/mixins.scss';
+@import '../sass/libs/loader.scss';
+@import '../sass/libs/modules/header.scss';
+@import '../sass/libs/modules/footer.scss';
+@import '../sass/libs/card.scss';
+@import '../sass/libs/modules/like.scss';
 
 .title { 
     font-size: 1.5rem;
@@ -23,6 +16,7 @@ body {
     align-items: center;
     background-color: #EAEAEA;
     display: flex; 
+    align-self: stretch;
     font-size: 1rem;
     font-weight: 500;
     gap: 1.07rem;
@@ -35,6 +29,8 @@ body {
     background-color: $background;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
     justify-content: space-between;
     margin: 0 auto;
     padding-bottom: 3.57rem;
@@ -51,8 +47,13 @@ body {
     }
 }
 
+.btn {
+    @include cta(13.63rem);
+}
+
 .functioning {
     padding: 3rem 0 4.25rem 0;
+    align-self: stretch;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -66,16 +67,19 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 1.57rem;
+    padding: 0;
     margin-top: 1.63rem;
     margin-left: 2.03rem;
     margin-right: 1.25rem;
-    padding: 0;
     box-sizing: border-box;
     list-style-type: none;
     counter-reset: li;
-  }
- 
-  .functioning ol li {
+    font-weight: 500;
+    font-size: 1rem;
+    align-self: stretch;
+}
+
+.functioning ol li {
     position: relative;
     width: 100%;
   }
@@ -93,9 +97,12 @@ body {
     line-height: 1.5rem;
     background: $primary;
     color: white;
+    
   }
 
-  .btn__functioning {
+.functioning__list {
+    display: flex;
+    align-items: center;
     justify-content: flex-start;
     column-gap: 1.69rem;
     color: black;
@@ -117,6 +124,7 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    align-self: stretch;
     padding: 3.38rem 1.13rem 4.13rem 1.07rem; 
     .title {
         padding-bottom: 1.5rem;
@@ -132,5 +140,5 @@ body {
 
 }
 
-@import 'libs/media/index_media.scss';
-@import 'libs/media/header_media.scss';
+@import '../sass/libs/media/index_media.scss';
+

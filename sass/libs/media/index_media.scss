@@ -1,5 +1,5 @@
 /* Medium devices (tablets, less/equal than 425px) */
-@include tablette(425px) {
+@include tablette {
    .hero {
     .title {
         width: 100%;    
@@ -8,20 +8,69 @@
 }
 
 /* Large devices (Computer 1024px) */
-@include computer(1024px) {
+@include computer {
     .hero {
+        padding-top: 1.88rem;
+        padding-bottom: 1.88rem;
+
         .title {
             font-size: 2.5rem;    
         }
     }
 
+    .desktop {
+        width: 100%;
+        max-width: 67.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .functioning {
-        padding: 3.13rem auto;
+        align-items: center;
+        
+        .title {
+            margin-left: 0;
+        }
         
         ol {
             flex-direction: row;
             column-gap: 2.28rem;
-            
+            margin-bottom: 0;
+            margin-left: 0;
+            width: 100%;
+        }
+        
+        .btn__functioning {
+            margin-left: 0.75rem;
+            white-space: nowrap; 
+        }
+    }
+
+    .restaurants {
+        flex-direction: row;
+        justify-content: center;
+        padding: 1.88rem 0;
+
+        .desktop {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .title {
+            width: 100%;
+            padding-bottom: 1.75rem;
+        }
+        
+        .card {
+            max-width: 30.63rem;
+            width: 100%;
+            margin: 0;
+        }
+
+        .card:nth-child(2) {
+            margin-bottom: 3.13rem;
         }
         
     }

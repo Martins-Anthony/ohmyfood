@@ -1,0 +1,114 @@
+.loader {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: $backgroundBtn;
+    height: 100%;
+    width: 100%;
+    opacity: 0.95;
+    animation: loader 0s 3s forwards;
+    animation-delay: 3s;
+    border: 1px solid black;
+}
+
+.container__logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+    
+.bell {
+    height: 6.9rem;
+    width: 15.63rem;
+    position: relative;
+    z-index: 2;
+    animation: liftBell 1.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+    
+.grip {
+    margin: 0 auto;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+    background: $bell-color;
+    z-index: 1;
+    position: relative;
+}
+    
+.lid {
+    background: $bell-color;
+    border-radius: 6.25rem 6.25rem 0 0;
+    height: 6.27rem;
+    width: 12.5rem;
+    left: 10%;
+    z-index: 1;
+    position: absolute;
+    transform: translateY(-10%);
+}
+    
+.logo {
+    color: #222;
+    margin: 0;
+    z-index: 1;
+    letter-spacing: -0.15rem;
+    position: absolute;
+}
+
+.leter {
+    font-family: 'Shrikhand', cursive;
+    font-size: 2rem;
+    animation: moveLogo 2s linear infinite;
+    animation-delay: 1s;
+  }
+    
+.flat {
+    background: $bell-color;
+    height: 0.94rem;
+    width: 15.63rem;
+    border-radius: 3.13rem;
+}
+    
+@keyframes loader {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);  
+    }
+}
+    
+@keyframes liftBell {
+    0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: translateY(-3rem) translateX(0);
+      }
+}
+       
+@keyframes moveLogo {
+    0% {
+        color: #D3D3D3;
+        text-shadow: 0 0 7px grey;
+      }
+    90% {
+      color: #222;
+      text-shadow: none;
+    }
+    100% {
+        color: #D3D3D3;
+        text-shadow: 0 0 7px grey;
+    }
+}
+
+@for $i from 1 through 8 {
+    .leter:nth-child(#{$i}) {
+        animation-delay: 0.1s *$i; 
+    }
+}
