@@ -3,7 +3,6 @@
 @import '../sass/libs/loader.scss';
 @import '../sass/libs/modules/header.scss';
 @import '../sass/libs/modules/footer.scss';
-@import '../sass/libs/card.scss';
 @import '../sass/libs/modules/like.scss';
 
 .title { 
@@ -138,6 +137,67 @@
         margin-bottom: 0;
     }
 
+}
+
+.card {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    border-radius: 0.94rem;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    height: 15.69rem;
+    width: 100%;
+    a {
+        width: 100%;
+    }
+}
+
+.card__img {
+    border-radius: 0.94rem 0.94rem 0 0;
+    object-fit: cover;
+    height: 10.88rem;
+    width: 100%;
+}
+
+.card__title {
+    font-size: 1.13rem;
+    font-weight: 700;
+    margin: 1rem 0 0.32rem 0.82rem;
+    width: 16.69rem;
+}
+
+.card__subtitle {
+    font-size: 1.07rem;
+    font-weight: 300;
+    height: 1.5rem;
+    margin: 0 0 0.75rem 0.82rem;
+}
+
+.card__like {   
+    align-self: end;
+    margin: 0 1.57rem 2.07rem 0;
+    position: absolute;
+}
+
+.formatted-badge {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.badge {
+    align-items: center;
+    background: $green;
+    border-radius: 0.13rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    color: $green-Font;
+    display: flex;
+    font-size: 0.88rem;
+    font-weight: 500;
+    height: 1.82rem;
+    justify-content: center;
+    margin: 0.82rem 0.75rem 0 0;
+    position: absolute;
+    width: 5rem;
 }
 
 @import '../sass/libs/media/index_media.scss';

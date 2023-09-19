@@ -75,21 +75,21 @@
 }
     
 @keyframes loader {
-    0% {
+    from {
         transform: scale(1);
     }
-    100% {
+    to {
         transform: scale(0);  
     }
 }
     
 @keyframes liftBell {
-    0% {
+    from{
         transform: scale(1);
       }
-      100% {
+    to {
         transform: translateY(-3rem) translateX(0);
-      }
+    }
 }
        
 @keyframes moveLogo {

@@ -55,6 +55,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     
     &__title {
         text-transform: uppercase;
@@ -66,36 +67,46 @@
     .line__green {
         border: 0.1rem solid $green;
         margin-top: 0.31rem;
-        width: 2.5rem;
+        max-width: 2.5rem;
     }
+}
 
-    &__card {
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 4.50rem;
+    padding: 0.94rem 0 0.94rem 0.94rem;
+    margin-top: 0.75rem;
+    border-radius: 0.94rem;
+    background: white;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    &__menu {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
-        border-radius: 0.94rem;
-        background: white;
-        box-shadow: 0 0.25rem 0.94rem 0 rgba(0, 0, 0, 0.10);
-        height: 2.62rem;
-        padding: 0.94rem;
-        margin-top: 0.75rem;
-
-        &--container {
-            width: 100%;
-        }
-
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
         &--title {
             margin: 0 0 0.3rem 0;
             font-size: 1.12rem;
             font-weight: 500;
         }
-
-        &--title, &--subtitle {
+        
+        &--container, &--title, &--subtitle {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-
+      
         &--subtitle {
             font-size: 0.94rem;
             font-weight: 300;
@@ -108,6 +119,48 @@
         }
     }
 
+}
+
+.check {
+    background: $green;
+    color: white;
+    width: 0;
+    font-size: 1.5rem;
+    padding: 0; 
+    margin-left: 0.94rem;
+    height: 4.5rem;
+    @include center;
+    transition: width 0.2s;    
+}
+
+.card:hover .check {
+    width: 3.69rem;
+}
+
+.card, .menu__title, .line__green {
+    animation: arrival 2s forwards ease-in-out;
+    opacity: 0;
+    width: 0;  
+}
+
+@keyframes arrival {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    50% {
+        opacity: .4;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@for $i from 1 through 9 {
+    .card:nth-child(#{$i}) {
+        animation-delay: 0.2s *$i; 
+    }
 }
 
 .btn {
