@@ -125,7 +125,7 @@ a {
 }
 @keyframes moveLogo {
   0% {
-    color: #D3D3D3;
+    color: #d3d3d3;
     text-shadow: 0 0 7px grey;
   }
   90% {
@@ -133,7 +133,7 @@ a {
     text-shadow: none;
   }
   100% {
-    color: #D3D3D3;
+    color: #d3d3d3;
     text-shadow: 0 0 7px grey;
   }
 }
@@ -313,7 +313,7 @@ footer li {
 
 .locabar {
   align-items: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   display: flex;
   align-self: stretch;
   font-size: 1rem;
@@ -426,7 +426,7 @@ footer li {
   border-radius: 1.25rem;
 }
 .functioning__list i {
-  color: #7E7E7E;
+  color: #7e7e7e;
   font-size: 1.25rem;
 }
 .functioning__list .fa-store {

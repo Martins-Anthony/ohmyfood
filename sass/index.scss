@@ -1,26 +1,26 @@
-@import '../sass/libs/modules/style.scss';
-@import '../sass/libs/modules/mixins.scss';
-@import '../sass/libs/loader.scss';
-@import '../sass/libs/modules/header.scss';
-@import '../sass/libs/modules/footer.scss';
-@import '../sass/libs/modules/like.scss';
+@import "../sass/libs/modules/style.scss";
+@import "../sass/libs/modules/mixins.scss";
+@import "../sass/libs/loader.scss";
+@import "../sass/libs/modules/header.scss";
+@import "../sass/libs/modules/footer.scss";
+@import "../sass/libs/modules/like.scss";
 
-.title { 
+.title {
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 0;  
+    margin: 0;
 }
 
 .locabar {
     align-items: center;
-    background-color: #EAEAEA;
-    display: flex; 
+    background-color: #eaeaea;
+    display: flex;
     align-self: stretch;
     font-size: 1rem;
     font-weight: 500;
     gap: 1.07rem;
     height: 3.13rem;
-    justify-content: center;   
+    justify-content: center;
 }
 
 .hero {
@@ -34,12 +34,12 @@
     margin: 0 auto;
     padding-bottom: 3.57rem;
     padding-top: 3.44rem;
-    text-align: center; 
+    text-align: center;
     &__txt {
         font-size: 1.13rem;
-        font-weight: 300; 
+        font-weight: 300;
         padding-bottom: 1.69rem;
-    } 
+    }
     .title {
         height: 4.25rem;
         width: 17.19rem;
@@ -57,7 +57,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    .title { 
+    .title {
         margin-left: 1.25rem;
     }
 }
@@ -81,9 +81,9 @@
 .functioning ol li {
     position: relative;
     width: 100%;
-  }
- 
-  .functioning ol li::before {
+}
+
+.functioning ol li::before {
     content: counter(li);
     counter-increment: li;
     box-sizing: border-box;
@@ -96,8 +96,7 @@
     line-height: 1.5rem;
     background: $primary;
     color: white;
-    
-  }
+}
 
 .functioning__list {
     display: flex;
@@ -110,21 +109,21 @@
     height: 4.53rem;
     border-radius: 1.25rem;
     i {
-      color: #7E7E7E;
-      font-size: 1.25rem;
+        color: #7e7e7e;
+        font-size: 1.25rem;
     }
     .fa-store {
-      color: $primary;
+        color: $primary;
     }
 }
 
-.restaurants {  
+.restaurants {
     background: $background;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    padding: 3.38rem 1.13rem 4.13rem 1.07rem; 
+    padding: 3.38rem 1.13rem 4.13rem 1.07rem;
     .title {
         padding-bottom: 1.5rem;
         width: 21.25rem;
@@ -136,7 +135,6 @@
     .card:last-child {
         margin-bottom: 0;
     }
-
 }
 
 .card {
@@ -144,7 +142,7 @@
     flex-direction: row-reverse;
     position: relative;
     border-radius: 0.94rem;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
     height: 15.69rem;
     width: 100%;
     a {
@@ -173,7 +171,7 @@
     margin: 0 0 0.75rem 0.82rem;
 }
 
-.card__like {   
+.card__like {
     align-self: end;
     margin: 0 1.57rem 2.07rem 0;
     position: absolute;
@@ -200,5 +198,4 @@
     width: 5rem;
 }
 
-@import '../sass/libs/media/index_media.scss';
-
+@import "../sass/libs/media/index_media.scss";
