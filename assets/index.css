@@ -292,7 +292,7 @@ footer li {
   -webkit-background-clip: text;
   position: relative;
   transform: scale(0);
-  transition: transform 0.5s;
+  transition: transform 0.4s;
   transform-origin: 50% 95%;
 }
 
@@ -371,7 +371,6 @@ footer li {
 .functioning {
   padding: 3rem 0 4.25rem 0;
   align-self: stretch;
-  margin: 0;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -536,6 +535,7 @@ footer li {
     max-width: 67.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    box-sizing: border-box;
   }
   .functioning {
     align-items: center;
@@ -546,11 +546,12 @@ footer li {
   .functioning ol {
     flex-direction: row;
     column-gap: 2.28rem;
+    justify-content: space-between;
     margin-bottom: 0;
     margin-left: 0;
     width: 100%;
   }
-  .functioning .btn__functioning {
+  .functioning .functioning__list {
     margin-left: 0.75rem;
     white-space: nowrap;
   }

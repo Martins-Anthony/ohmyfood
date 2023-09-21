@@ -23,6 +23,7 @@
         max-width: 67.5rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        box-sizing: border-box;
     }
 
     .functioning {
@@ -35,12 +36,13 @@
         ol {
             flex-direction: row;
             column-gap: 2.28rem;
+            justify-content: space-between;
             margin-bottom: 0;
             margin-left: 0;
             width: 100%;
         }
         
-        .btn__functioning {
+        .functioning__list {
             margin-left: 0.75rem;
             white-space: nowrap; 
         }
