@@ -42,8 +42,6 @@ a {
   width: 100%;
   opacity: 0.95;
   animation: loader 0s 3s forwards;
-  animation-delay: 3s;
-  border: 1px solid black;
 }
 
 .container__logo {
@@ -97,7 +95,6 @@ a {
   font-family: "Shrikhand", cursive;
   font-size: 2rem;
   animation: moveLogo 2s linear infinite;
-  animation-delay: 1s;
 }
 
 .flat {
@@ -126,15 +123,12 @@ a {
 @keyframes moveLogo {
   0% {
     color: #d3d3d3;
-    text-shadow: 0 0 7px grey;
   }
   90% {
     color: #222;
-    text-shadow: none;
   }
   100% {
     color: #d3d3d3;
-    text-shadow: 0 0 7px grey;
   }
 }
 .leter:nth-child(1) {

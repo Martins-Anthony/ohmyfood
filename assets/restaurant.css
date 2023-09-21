@@ -157,15 +157,11 @@ footer li {
   transform-origin: 50% 95%;
 }
 
-.heart-checkbox:checked + .heart-label .icon-like-solid {
+.heart-checkbox:checked + .heart-label .icon-like-solid,
+.heart-checkbox:hover + .heart-label .icon-like-solid {
   transform: scale(1);
 }
 
-@media (min-width: 1024px) {
-  .heart-checkbox:hover + .heart-label .icon-like-solid {
-    transform: scale(1);
-  }
-}
 .btn {
   display: flex;
   align-items: center;
