@@ -27,12 +27,8 @@
   transform-origin: 50% 95%;
 }
     
-.heart-checkbox:checked + .heart-label .icon-like-solid{
+.heart-checkbox:checked + .heart-label .icon-like-solid,
+.heart-checkbox:hover + .heart-label .icon-like-solid{
   transform: scale(1);
 }
 
-@include computer{
-  .heart-checkbox:hover + .heart-label .icon-like-solid{
-    transform: scale(1);
-  }
-}
