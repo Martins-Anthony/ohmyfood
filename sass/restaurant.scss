@@ -125,6 +125,7 @@
 }
 
 .check {
+    @include center;
     background: $green;
     color: white;
     width: 0;
@@ -132,7 +133,7 @@
     padding: 0; 
     margin-left: 0.94rem;
     height: 4.5rem;
-    @include center;      
+    transition: width 0.4s;        
 }
 
 .card:hover .check {

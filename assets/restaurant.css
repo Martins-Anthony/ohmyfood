@@ -293,6 +293,9 @@ footer li {
 }
 
 .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #99E2D0;
   color: white;
   width: 0;
@@ -300,9 +303,7 @@ footer li {
   padding: 0;
   margin-left: 0.94rem;
   height: 4.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: width 0.4s;
 }
 
 .card:hover .check {
