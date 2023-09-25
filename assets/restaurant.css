@@ -339,6 +339,10 @@ footer li {
   animation-delay: 1s;
 }
 
+.card:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
 /* Medium devices (tablets, less/equal than 425px) */
 @media (min-width: 425px) {
   .restaurant-menu__title {

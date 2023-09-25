@@ -150,7 +150,7 @@
     }
 }
 
-@for $i from 1 through 5 {
+@for $i from 1 through 6 {
     .card:nth-child(#{$i}) {
         animation-delay: 0.2s *$i; 
     }
