@@ -6,11 +6,11 @@
 
 ## Description du projet
 
-Ce projet fait partie de ma formation d'intégrateur web chez OpenClassrooms.<br>
+Réalisation dans le cadre de ma formation d'intégrateur web chez OpenClassrooms.<br><br>
 Il consiste à développer une interface mobile-fitst pour une start-up nommée OhMyFood, spécialisée dans la réservation de menus dans des restaurants gastronimiques.<br>
-Le projet inclut l'intégration des maquettes fournies sur Figma en utilisant Sass et l'implémentation d'animations CSS pour améliorer l'expérience utilisateur.
+Le projet inclut l'intégration des maquettes fournies sur Figma ([voir la maquette](https://www.figma.com/design/E4aL7CBi7SPEXhw6JRSQ0t/ARCHIVE-Maquettes-Ohmyfood-(mobile-et-desktop)?node-id=0-1&t=7fF59cTmtuBJQzrL-0)) en utilisant Sass et l'implémentation d'animations CSS pour améliorer l'expérience utilisateur.
 
-## Démo en Ligne
+## Démo en ligne
 
 Vous pouvez consulter le projet en ligne via GitHub Pages : [OhMyFood sur GitHub Pages](https://martins-anthony.github.io/ohmyfood/)
 
@@ -27,3 +27,7 @@ Vous pouvez consulter le projet en ligne via GitHub Pages : [OhMyFood sur GitHub
 - **Animations CSS** : Des animations au survol et à l'interaction des éléments pour une navigation enrichie.
 - **Getion des menus** : Affichage des menus de restaurants gastronomiques avec la possibilité de personnaliser les commandes.
 - **Utilisation de SASS** : Structure du code CSS en plusieurs fichiers pour une meilleur organisation et maintenabilité.
+
+## Auteur
+
+- **Martins Anthony** - [Portfolio](https://webcraft-anthony.com/) - [GitHub](https://github.com/Martins-Anthony)
